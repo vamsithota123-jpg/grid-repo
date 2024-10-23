@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4x2 Grid Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+  gap: 10px;                             /* Spacing between grid items */
+  width: 80%;
+  max-width: 800px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  height: 100px;     /* You can adjust this to make the grid taller or shorter */
+  border-radius: 10px;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="grid-item" style="background-color: #FF5733;">Item 1</div>
+    <div class="grid-item" style="background-color: #33FF57;">Item 2</div>
+    <div class="grid-item" style="background-color: #3357FF;">Item 3</div>
+    <div class="grid-item" style="background-color: #FF33A1;">Item 4</div>
+    <div class="grid-item" style="background-color: #FFC300;">Item 5</div>
+    <div class="grid-item" style="background-color: #DAF7A6;">Item 6</div>
+    <div class="grid-item" style="background-color: #900C3F;">Item 7</div>
+    <div class="grid-item" style="background-color: #581845;">Item 8</div>
+</div>
+
+</body>
+</html>
